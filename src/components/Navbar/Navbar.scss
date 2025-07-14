@@ -1,0 +1,107 @@
+@import '../../styles/variables';
+
+.navbar {
+  width: 100%;
+  background: $color-white;
+  height: $header-height;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 1px 0 $color-border;
+  position: relative;
+
+  &__container {
+    max-width: $container-width;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 $container-padding;
+    height: 100%;
+  }
+
+  &__logo {
+    font-family: $font-main;
+    font-size: 20px;
+    font-weight: $font-weight-bold;
+    color: $color-main;
+    text-decoration: none;
+    letter-spacing: 1px;
+  }
+
+  &__menu {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    @media (max-width: $breakpoint-sm) {
+      display: none;
+    }
+  }
+
+  &__item {}
+
+  &__link {
+    color: $color-main;
+    font-size: $font-size-base;
+    font-weight: $font-weight-medium;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    transition: color $transition-main;
+    &:hover {
+      color: $color-accent;
+    }
+  }
+
+  &__burger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    width: 32px;
+    height: 32px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+    span {
+      display: block;
+      height: 3px;
+      width: 100%;
+      background: $color-main;
+      border-radius: 2px;
+      transition: all $transition-main;
+    }
+    @media (max-width: $breakpoint-sm) {
+      display: flex;
+    }
+  }
+
+  // Мобильное меню
+  &.navbar--mobile-open {
+    .navbar__menu {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: $header-height;
+      left: 0;
+      width: 100%;
+      background: $color-white;
+      box-shadow: 0 4px 24px rgba(34,34,34,0.08);
+      gap: 0;
+      z-index: 9;
+      li {
+        border-bottom: 1px solid $color-border;
+        &:last-child { border-bottom: none; }
+      }
+      a {
+        display: block;
+        padding: 20px;
+        font-size: $font-size-base;
+      }
+    }
+  }
+} 

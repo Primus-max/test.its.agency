@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог товаров</title>
+    <link rel="stylesheet" href="../style.scss">
   </head>
   <body>
-    <div id="app">
+    <header class="header">
+      <nav class="navbar">
+        <div class="navbar__container"><a class="navbar__logo" href="#">COLORS®</a>
+          <ul class="navbar__menu">
+            <li class="navbar__item"><a class="navbar__link" href="#">ПРОДУКТЫ</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="#">ЦВЕТА</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="#">ВДОХНОВЕНИЕ</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="#">СОВЕТЫ</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="#">НАЙТИ МАГАЗИН</a></li>
+          </ul>
+          <button class="navbar__burger" type="button" aria-label="Открыть меню"><span></span><span></span><span> </span></button>
+        </div>
+      </nav>
+    </header>
+    <main class="catalog">
       <h1>Каталог товаров</h1>
       <p>Добро пожаловать в тестовое приложение!</p>
-    </div>
-    <script type="module" src="./main.js"></script>
+      <!-- Здесь будет каталог товаров -->
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <p class="footer__copyright">© COLORS® 2024 </p>
+      </div>
+    </footer>
+    <script type="module" src="../main.js"> </script>
   </body>
-</html> 
+</html>

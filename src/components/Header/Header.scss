@@ -1,0 +1,7 @@
+@import '../../styles/variables';
+.header {
+  width: 100%;
+  background: $color-white;
+  box-shadow: 0 1px 0 $color-border;
+  z-index: 100;
+} 

@@ -1,3 +1,43 @@
-$main-color: #222;
-$accent-color: #ff6f61;
-$bg-color: #fff; 
+// Цвета
+$color-bg: #f5f5f5;
+$color-main: #222222;
+$color-accent: #5b7261;
+$color-accent-light: #e6edea;
+$color-border: #e5e5e5;
+$color-price: #222222;
+$color-price-accent: #5b7261;
+$color-placeholder: #bdbdbd;
+$color-modal-bg: rgba(34,34,34,0.6);
+$color-white: #fff;
+
+// Шрифты
+$font-main: 'Inter', Arial, sans-serif;
+$font-size-h1: 40px;
+$font-size-h2: 24px;
+$font-size-base: 16px;
+$font-size-small: 14px;
+$font-weight-bold: 700;
+$font-weight-medium: 500;
+$font-weight-normal: 400;
+$line-height-base: 1.5;
+
+// Контейнеры и брейкпоинты
+$container-width: 1200px;
+$container-padding: 32px;
+$breakpoint-lg: 1200px;
+$breakpoint-md: 900px;
+$breakpoint-sm: 600px;
+
+// Радиусы, тени, transition
+$radius-main: 12px;
+$radius-small: 6px;
+$shadow-main: 0 4px 24px rgba(34,34,34,0.08);
+$transition-main: 0.2s cubic-bezier(0.4,0,0.2,1);
+
+// Прочее
+$header-height: 72px;
+$footer-height: 80px;
+$card-gap: 24px;
+$card-padding: 16px;
+$cart-width: 420px;
+$slider-height: 340px; 

@@ -1,0 +1,14 @@
+@import '../styles/variables';
+.catalog {
+  min-height: 400px;
+  padding: 40px 0;
+  h1 {
+    font-size: $font-size-h1;
+    color: $color-main;
+    margin-bottom: 16px;
+  }
+  p {
+    color: $color-accent;
+    font-size: $font-size-base;
+  }
+} 
