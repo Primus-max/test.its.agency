@@ -35,9 +35,18 @@ $shadow-main: 0 4px 24px rgba(34,34,34,0.08);
 $transition-main: 0.2s cubic-bezier(0.4,0,0.2,1);
 
 // Прочее
-$header-height: 72px;
+$header-height: 64px;
 $footer-height: 80px;
 $card-gap: 24px;
 $card-padding: 16px;
 $cart-width: 420px;
 $slider-height: 340px; 
+
+// Мобильные переменные header
+$header-mobile-padding: 12px;
+$header-mobile-height: 64px;
+$icon-size-mobile: 22px;
+$cart-size-mobile: 28px;
+$logo-font-size-mobile: 20px;
+$header-mobile-gap: 8px;
+$header-mobile-badge-font: 14px; 
