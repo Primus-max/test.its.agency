@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite && npx pug src/index.pug --out src --pretty --watch",
     "build": "vite build",
     "preview": "vite preview",
     "pug:build": "pug src/index.pug --out src --pretty"
