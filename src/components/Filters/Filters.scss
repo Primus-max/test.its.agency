@@ -1,0 +1,34 @@
+.filters {
+  min-width: 220px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px 20px 20px 20px;
+  margin-right: 32px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  font-size: 15px;
+}
+.filters__count {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 18px;
+}
+.filters__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.filters__item {
+  margin-bottom: 14px;
+}
+.filters__label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 15px;
+}
+.filters__checkbox {
+  margin-right: 10px;
+  accent-color: #A5D6C9;
+  width: 18px;
+  height: 18px;
+} 

@@ -1,0 +1,19 @@
+.sort {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.sort__select {
+  font-size: 15px;
+  padding: 6px 16px;
+  border-radius: 6px;
+  border: 1px solid #E0E0E0;
+  background: #fff;
+  color: #222;
+  outline: none;
+  cursor: pointer;
+}
+.sort__select:focus {
+  border-color: #A5D6C9;
+} 
