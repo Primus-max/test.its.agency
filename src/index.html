@@ -75,13 +75,56 @@
       <button class="banner__arrow banner__arrow--right" type="button" aria-label="Следующий слайд"><span>&gt;</span></button>
       <div class="banner__dots"><span class="banner__dot banner__dot--active" data-index="0"></span><span class="banner__dot" data-index="1"></span><span class="banner__dot" data-index="2"> </span></div>
     </div>
-    <main class="catalog">
-      <div class="catalog-list">
-        <!-- Карточки товаров будут рендериться сюда через JS -->
+    <div class="catalog-layout">
+      <div class="catalog-layout__sidebar">
+        <div class="filters">
+          <div class="filters__count">412 товаров</div>
+          <ul class="filters__list">
+            <li class="filters__item">
+              <label class="filters__label">
+                <input class="filters__checkbox" type="checkbox" name="isNew"><span class="filters__custom"></span>Новинки
+              </label>
+            </li>
+            <li class="filters__item">
+              <label class="filters__label">
+                <input class="filters__checkbox" type="checkbox" name="isAvailable"><span class="filters__custom"></span>Есть в наличии
+              </label>
+            </li>
+            <li class="filters__item">
+              <label class="filters__label">
+                <input class="filters__checkbox" type="checkbox" name="isContract"><span class="filters__custom"></span>Контрактные
+              </label>
+            </li>
+            <li class="filters__item">
+              <label class="filters__label">
+                <input class="filters__checkbox" type="checkbox" name="isExclusive"><span class="filters__custom"></span>Эксклюзивные
+              </label>
+            </li>
+            <li class="filters__item">
+              <label class="filters__label">
+                <input class="filters__checkbox" type="checkbox" name="isSale"><span class="filters__custom"></span>Распродажа 
+              </label>
+            </li>
+          </ul>
+        </div>
       </div>
-      <p>Добро пожаловать в тестовое приложение!</p>
-      <!-- Здесь будет каталог товаров -->
-    </main>
+      <div class="catalog-layout__main">
+        <div class="sort">
+          <div class="sort__dropdown">
+            <button class="sort__toggle" type="button">Сначала дорогие</button>
+            <ul class="sort__list">
+              <li class="sort__item sort__item--active">Сначала дорогие</li>
+              <li class="sort__item">Сначала недорогие</li>
+              <li class="sort__item">Сначала популярные</li>
+              <li class="sort__item">Сначала новые </li>
+            </ul>
+          </div>
+        </div>
+        <div class="catalog-list">
+          <!-- Карточки товаров будут рендериться сюда через JS -->
+        </div>
+      </div>
+    </div>
     <footer class="footer">
       <div class="footer__container">
         <p class="footer__copyright"> </p>

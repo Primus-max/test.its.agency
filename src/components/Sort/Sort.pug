@@ -1,5 +1,8 @@
 .sort
-  select.sort__select(name="sort")
-    option(value="expensive") Сначала дорогие
-    option(value="cheap") Сначала дешёвые
-    option(value="new") Новинки 
+  .sort__dropdown
+    button.sort__toggle(type="button") Сначала дорогие
+    ul.sort__list
+      li.sort__item.sort__item--active Сначала дорогие
+      li.sort__item Сначала недорогие
+      li.sort__item Сначала популярные
+      li.sort__item Сначала новые 
