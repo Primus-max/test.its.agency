@@ -7,6 +7,10 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 32px;
+
+  @media (max-width: $breakpoint-sm) {
+   display: none;
+  }
 }
 
 .banner__breadcrumbs {
@@ -118,4 +122,11 @@
 .banner__dot--active {
   opacity: 1;
   background: #fff;
+}
+
+.banner__slide {
+  display: none;
+}
+.banner__slide--active {
+  display: block;
 } 
