@@ -1,8 +1,16 @@
 extends ./Layout.pug
 
 block content
+  // Мобильная версия: хлебные крошки и заголовок
+  .catalog-mobile
+    .catalog-mobile__breadcrumbs
+      a.breadcrumbs__link(href="#") ГЛАВНАЯ
+      span.breadcrumbs__sep ·
+      a.breadcrumbs__link(href="#") ПРОДУКТЫ
+      span.breadcrumbs__sep ·
+      span.breadcrumbs__current КРАСКИ
+    h1.catalog-mobile__title Краски
   include ../components/Banner/Banner.pug
   main.catalog
-    h1 Каталог товаров
     p Добро пожаловать в тестовое приложение!
     // Здесь будет каталог товаров 
