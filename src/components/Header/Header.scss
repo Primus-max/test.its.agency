@@ -11,14 +11,14 @@
   }
 
   &__container {        
-    width: 94%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 $container-padding;
+    padding: 0 64px;
     height: $header-height;
     @media (max-width: $breakpoint-sm) {
-      padding: 0;
+      padding: 0 24px;
     }
   }
   &__logo {
@@ -117,7 +117,7 @@
     width: 28px;
     height: 28px;
     border-radius: 50%;
-    background: $color-accent-light;
+    background: $color-price-accent;
     color: $color-main;
     font-weight: $font-weight-bold;
     border: none;
