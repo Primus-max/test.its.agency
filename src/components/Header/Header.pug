@@ -1,2 +1,19 @@
 header.header
-  include ../Navbar/Navbar.pug 
+  .header__container
+    // Левая часть: бургер (моб), логотип 
+    a.header__logo(href="#") COLORS®
+    // Центр: меню (только десктоп)
+    include ../Navbar/Navbar.pug
+    // Правая часть: телефон и иконки
+    .header__right
+      .header__phone
+        span.header__phone-number +7 (495) 221-77-69
+        span.header__phone-caption Заказать звонок
+      .header__icons
+        a.header__icon(href="#" aria-label="Поиск")
+          include ../../assets/img/icons/search.svg
+        a.header__icon(href="#" aria-label="Избранное")
+          include ../../assets/img/icons/heart.svg
+        a.header__icon(href="#" aria-label="Профиль")
+          include ../../assets/img/icons/profile.svg
+        button.header__cart(type="button" aria-label="Корзина") 4 

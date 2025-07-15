@@ -1,7 +1,8 @@
 @import '../../styles/variables';
 .footer {
   width: 100%;
-  background: $color-white;
+  height: 240px;
+  background: $color-black;
   box-shadow: 0 -1px 0 $color-border;
   padding: 24px 0;
   &__container {

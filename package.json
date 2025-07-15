@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "vite",
+    "dev": "concurrently \"npx pug src/index.pug --out src --pretty --watch\" \"vite\"",
     "build": "vite build",
     "preview": "vite preview",
     "pug:build": "pug src/index.pug --out src --pretty"
@@ -21,6 +21,7 @@
     "vite-plugin-pug": "^0.4.1"
   },
   "devDependencies": {
+    "concurrently": "^9.2.0",
     "pug-cli": "^1.0.0-alpha6"
   }
 }
