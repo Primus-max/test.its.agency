@@ -54,10 +54,17 @@
   width: 40px;
   height: 32px;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: background 0.2s, opacity 0.2s;
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.product-card:hover .product-card__add {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .product-card__add:hover {
