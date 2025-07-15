@@ -1,6 +1,7 @@
 import './style.scss';
 import './components/Navbar/Navbar.scss';
 import { initNavbar } from './components/Navbar/Navbar.js';
+import './components/Banner/index.js';
 
 initNavbar();
 

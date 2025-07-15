@@ -1,0 +1,35 @@
+.banner
+  .banner__breadcrumbs
+    a.breadcrumbs__link(href="#") Главная
+    span.breadcrumbs__sep ·
+    a.breadcrumbs__link(href="#") Продукты
+    span.breadcrumbs__sep ·
+    span.breadcrumbs__current Краски
+  .banner__bg
+  .banner__content
+    .banner__slide.banner__slide--active
+      h2.banner__title Краски
+      p.banner__subtitle
+        | Идеально подойдут для стен и других поверхностей.
+        br
+        | Найди свой идеальный цвет!
+    .banner__slide
+      h2.banner__title Декоративные покрытия
+      p.banner__subtitle
+        | Для стильных акцентов и уникальных фактур.
+        br
+        | Создайте атмосферу уюта и индивидуальности!
+    .banner__slide
+      h2.banner__title Грунтовки
+      p.banner__subtitle
+        | Надёжная основа для долговечного ремонта.
+        br
+        | Защитите стены и улучшите сцепление материалов!
+  button.banner__arrow.banner__arrow--left(type="button" aria-label="Предыдущий слайд")
+    span &lt;
+  button.banner__arrow.banner__arrow--right(type="button" aria-label="Следующий слайд")
+    span &gt;
+  .banner__dots
+    span.banner__dot.banner__dot--active(data-index="0")
+    span.banner__dot(data-index="1")
+    span.banner__dot(data-index="2") 
