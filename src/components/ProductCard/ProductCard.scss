@@ -38,11 +38,18 @@
   font-weight: 400;
 }
 
+.product-card__bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
 .product-card__price {
   font-size: 18px;
   font-weight: 600;
   color: #222;
-  margin-bottom: 10px;
 }
 
 .product-card__add {

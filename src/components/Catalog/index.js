@@ -12,8 +12,10 @@ function renderProductCard(product) {
       </div>
       <div class="product-card__info">
         <div class="product-card__title">${product.title}</div>
-        <div class="product-card__price">${product.price} ₽</div>
-        <button class="product-card__add" type="button">+</button>
+        <div class="product-card__bottom">
+          <div class="product-card__price">${product.price} ₽</div>
+          <button class="product-card__add" type="button">+</button>
+        </div>
       </div>
     </div>
   `;
