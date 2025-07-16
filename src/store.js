@@ -6,6 +6,7 @@ const store = {
     sort: 'expensive',
     loading: false,
     error: null,
+    cart: [], // [{id, title, price, image, count}]
   },
   listeners: [],
   setState(newState) {
@@ -17,6 +18,29 @@ const store = {
     return () => {
       this.listeners = this.listeners.filter(l => l !== fn);
     };
+  },
+  addToCart(product) {
+    const cart = [...this.state.cart];
+    const idx = cart.findIndex(item => item.id === product.id);
+    if (idx > -1) {
+      cart[idx].count += 1;
+    } else {
+      cart.push({ ...product, count: 1 });
+    }
+    this.setState({ cart });
+  },
+  removeFromCart(productId) {
+    const cart = this.state.cart.filter(item => item.id !== productId);
+    this.setState({ cart });
+  },
+  changeCartCount(productId, delta) {
+    const cart = this.state.cart.map(item =>
+      item.id === productId ? { ...item, count: Math.max(1, item.count + delta) } : item
+    );
+    this.setState({ cart });
+  },
+  clearCart() {
+    this.setState({ cart: [] });
   },
 };
 

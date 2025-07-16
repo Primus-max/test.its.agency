@@ -168,6 +168,33 @@
         <p class="footer__copyright"> </p>
       </div>
     </footer>
+    <div class="cart-modal">
+      <div class="cart-modal__overlay"></div>
+      <div class="cart-modal__container">
+        <div class="cart-modal__header"><span class="cart-modal__title">Корзина</span>
+          <button class="cart-modal__close" type="button" aria-label="Закрыть">×</button>
+        </div>
+        <div class="cart-modal__body">
+          <!-- Здесь будет список товаров-->
+          <ul class="cart-modal__list">
+            <!-- li.cart-modal__item-->
+            <!--   img.cart-modal__img(src="" alt="")-->
+            <!--   .cart-modal__info-->
+            <!--     .cart-modal__item-title Название товара-->
+            <!--     .cart-modal__item-price 6000 ₽-->
+            <!--   .cart-modal__controls-->
+            <!--     button.cart-modal__minus --->
+            <!--     span.cart-modal__count 2-->
+            <!--     button.cart-modal__plus +-->
+            <!--   button.cart-modal__remove ×-->
+          </ul>
+        </div>
+        <div class="cart-modal__footer">
+          <div class="cart-modal__total"><span>Итого</span><span class="cart-modal__sum">0 ₽</span></div>
+          <button class="cart-modal__order">Оформить заказ </button>
+        </div>
+      </div>
+    </div>
     <script type="module" src="../main.js"> </script>
   </body>
 </html>

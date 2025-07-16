@@ -3,11 +3,13 @@ import './components/Navbar/Navbar.scss';
 import './components/Banner/index.js';
 import './components/Sort/index.js';
 
+import { initCartModal } from './components/Cart/index.js';
 import { initCatalog } from './components/Catalog/index.js';
 import { initNavbar } from './components/Navbar/Navbar.js';
 
 initNavbar();
 initCatalog();
+initCartModal();
 
 // Мобильные фильтры
 const filtersOpenBtn = document.querySelector('.filters-mobile__open');
