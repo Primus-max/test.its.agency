@@ -9,11 +9,17 @@ block content
       span.breadcrumbs__sep ·
       span.breadcrumbs__current КРАСКИ
     h1.catalog-mobile__title Краски
+    .catalog-mobile__controls
+      button.filters-mobile__open(type="button") Фильтры
+      include ../components/Sort/Sort.pug
+  .filters-mobile__overlay
+  .filters-mobile
+    .filters-mobile__sheet
+      include ../components/Filters/Filters.pug
   include ../components/Banner/Banner.pug
   .catalog-layout
     .catalog-layout__sidebar
       include ../components/Filters/Filters.pug
     .catalog-layout__main
-      include ../components/Sort/Sort.pug
       .catalog-list
         
