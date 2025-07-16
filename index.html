@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог товаров</title>
+    <link rel="stylesheet" href="../style.scss">
+    <script type="module" crossorigin src="/assets/index-CCPa3OQr.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CM5Sn6p0.css">
+  </head>
+  <body>
+    <div class="cart-modal">
+      <div class="cart-modal__overlay"></div>
+      <div class="cart-modal__container">
+        <div class="cart-modal__header"><span class="cart-modal__title">Корзина</span>
+          <button class="cart-modal__close" type="button" aria-label="Закрыть">×</button>
+        </div>
+        <div class="cart-modal__body">
+          <!-- Здесь будет список товаров-->
+          <ul class="cart-modal__list">
+            <!-- li.cart-modal__item-->
+            <!--   img.cart-modal__img(src="" alt="")-->
+            <!--   .cart-modal__info-->
+            <!--     .cart-modal__item-title Название товара-->
+            <!--     .cart-modal__item-price 6000 ₽-->
+            <!--   .cart-modal__controls-->
+            <!--     button.cart-modal__minus --->
+            <!--     span.cart-modal__count 2-->
+            <!--     button.cart-modal__plus +-->
+            <!--   button.cart-modal__remove ×-->
+          </ul>
+        </div>
+        <div class="cart-modal__footer">
+          <div class="cart-modal__total"><span>Итого</span><span class="cart-modal__sum">0 ₽</span></div>
+          <button class="cart-modal__order">Оформить заказ </button>
+        </div>
+      </div>
+    </div>
+    <header class="header">
+      <div class="header__container">
+        <!-- Левая часть: бургер (моб), логотип --><a class="header__logo" href="#">COLORS®</a>
+        <!-- Центр: меню (только десктоп)-->
+        <nav class="navbar">
+          <div class="navbar__container">
+            <ul class="navbar__menu">   
+              <li class="navbar__item"><a class="navbar__link" href="#">ПРОДУКТЫ</a></li>
+              <li class="navbar__item"><a class="navbar__link" href="#">ЦВЕТА</a></li>
+              <li class="navbar__item"><a class="navbar__link" href="#">ВДОХНОВЕНИЕ</a></li>
+              <li class="navbar__item"><a class="navbar__link" href="#">СОВЕТЫ</a></li>
+              <li class="navbar__item"><a class="navbar__link" href="#">НАЙТИ МАГАЗИН</a></li>
+            </ul>
+            <button class="navbar__burger" type="button" aria-label="Открыть меню"><span></span><span></span><span> </span></button>
+          </div>
+        </nav>
+        <!-- Правая часть: телефон и иконки-->
+        <div class="header__right">
+          <div class="header__phone"><span class="header__phone-number">+7 (495) 221-77-69</span><span class="header__phone-caption">Заказать звонок</span></div>
+          <div class="header__icons"><a class="header__icon" href="#" aria-label="Поиск"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z" stroke="#1F2020" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M17.5 17.5L13.875 13.875" stroke="#1F2020" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    </a><a class="header__icon" href="#" aria-label="Избранное"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M11.0009 19C10.745 19.0001 10.4978 18.9074 10.3052 18.739C9.57966 18.1047 8.87674 17.5067 8.25817 16.9802C6.65691 15.7048 5.16127 14.3023 3.78581 12.7865C2.67695 11.5918 2.0423 10.0341 2.00085 8.4053C1.97621 6.99164 2.48598 5.62067 3.42845 4.56595C3.88583 4.0681 4.44256 3.67154 5.06275 3.40184C5.68294 3.13214 6.35283 2.9953 7.0292 3.00012C8.05552 2.99541 9.053 3.3392 9.8581 3.97514C10.2942 4.31625 10.6791 4.71815 11.0009 5.16854C11.3231 4.71841 11.7082 4.31682 12.1446 3.97605C12.9489 3.34036 13.9453 2.99628 14.9708 3.00012C15.6472 2.9953 16.3171 3.13214 16.9372 3.40184C17.5574 3.67154 18.1142 4.0681 18.5715 4.56595C19.514 5.62067 20.0238 6.99164 19.9991 8.4053C19.9585 10.0337 19.3249 11.5915 18.2169 12.7865C16.8425 14.3013 15.3481 15.7028 13.7482 16.9775C13.1287 17.5049 12.4267 18.1029 11.6975 18.7399C11.5045 18.9081 11.257 19.0005 11.0009 19V19Z" stroke="black" stroke-width="1.2"/>
+    </svg>
+    </a><a class="header__icon" href="#" aria-label="Профиль"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_8_30)">
+    <circle cx="11" cy="23" r="8.4" stroke="black" stroke-width="1.2"/>
+    <circle cx="11" cy="7" r="3.4" stroke="black" stroke-width="1.2"/>
+    </g>
+    <defs>
+    <clipPath id="clip0_8_30">
+    <rect width="22" height="22" fill="white"/>
+    </clipPath>
+    </defs>
+    </svg>
+    </a>
+            <button class="header__cart" type="button" aria-label="Корзина">4 </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="catalog-mobile">
+      <div class="catalog-mobile__breadcrumbs"><a class="breadcrumbs__link" href="#">ГЛАВНАЯ</a><span class="breadcrumbs__sep">·</span><a class="breadcrumbs__link" href="#">ПРОДУКТЫ</a><span class="breadcrumbs__sep">·</span><span class="breadcrumbs__current">КРАСКИ</span></div>
+      <h1 class="catalog-mobile__title">Краски</h1>
+    </div>
+    <div class="filters-mobile__overlay"></div>
+    <div class="filters-mobile">
+      <div class="filters-mobile__sheet">
+        <div class="filters">
+          <ul class="filters__list">
+            <li class="filters__item">
+              <label class="filters__label">
+                <input class="filters__switch" type="radio" name="filterType" value="isNew" checked><span class="filters__switcher"><span class="filters__switch-dot"></span></span><span class="filters__text">Новинки</span>
+              </label>
+            </li>
+            <li class="filters__item">
+              <label class="filters__label">
+                <input class="filters__switch" type="radio" name="filterType" value="isAvailable"><span class="filters__switcher"><span class="filters__switch-dot"></span></span><span class="filters__text">Есть в наличии</span>
+              </label>
+            </li>
+            <li class="filters__item">
+              <label class="filters__label">
+                <input class="filters__switch" type="radio" name="filterType" value="isContract"><span class="filters__switcher"><span class="filters__switch-dot"></span></span><span class="filters__text">Контрактные</span>
+              </label>
+            </li>
+            <li class="filters__item">
+              <label class="filters__label">
+                <input class="filters__switch" type="radio" name="filterType" value="isExclusive"><span class="filters__switcher"><span class="filters__switch-dot"></span></span><span class="filters__text">Эксклюзивные</span>
+              </label>
+            </li>
+            <li class="filters__item">
+              <label class="filters__label">
+                <input class="filters__switch" type="radio" name="filterType" value="isSale"><span class="filters__switcher"><span class="filters__switch-dot"></span></span><span class="filters__text">Распродажа </span>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="banner">
+      <div class="banner__breadcrumbs"><a class="breadcrumbs__link" href="#">Главная</a><span class="breadcrumbs__sep">·</span><a class="breadcrumbs__link" href="#">Продукты</a><span class="breadcrumbs__sep">·</span><span class="breadcrumbs__current">Краски</span></div>
+      <div class="banner__bg"></div>
+      <div class="banner__content">
+        <div class="banner__slide banner__slide--active">
+          <h2 class="banner__title">Краски</h2>
+          <p class="banner__subtitle">Идеально подойдут для стен и других поверхностей.<br>Найди свой идеальный цвет!</p>
+        </div>
+        <div class="banner__slide">
+          <h2 class="banner__title">Декоративные покрытия</h2>
+          <p class="banner__subtitle">Для стильных акцентов и уникальных фактур.<br>Создайте атмосферу уюта и индивидуальности!</p>
+        </div>
+        <div class="banner__slide">
+          <h2 class="banner__title">Грунтовки</h2>
+          <p class="banner__subtitle">Надёжная основа для долговечного ремонта.<br>Защитите стены и улучшите сцепление материалов!</p>
+        </div>
+      </div>
+      <button class="banner__arrow banner__arrow--left" type="button" aria-label="Предыдущий слайд"><span>&lt;</span></button>
+      <button class="banner__arrow banner__arrow--right" type="button" aria-label="Следующий слайд"><span>&gt;</span></button>
+      <div class="banner__dots"><span class="banner__dot banner__dot--active" data-index="0"></span><span class="banner__dot" data-index="1"></span><span class="banner__dot" data-index="2"> </span></div>
+    </div>
+    <div class="catalog-layout">
+      <div class="catalog-layout__sidebar">
+        <div class="filters">
+          <ul class="filters__list">
+            <li class="filters__item">
+              <label class="filters__label">
+                <input class="filters__switch" type="radio" name="filterType" value="isNew" checked><span class="filters__switcher"><span class="filters__switch-dot"></span></span><span class="filters__text">Новинки</span>
+              </label>
+            </li>
+            <li class="filters__item">
+              <label class="filters__label">
+                <input class="filters__switch" type="radio" name="filterType" value="isAvailable"><span class="filters__switcher"><span class="filters__switch-dot"></span></span><span class="filters__text">Есть в наличии</span>
+              </label>
+            </li>
+            <li class="filters__item">
+              <label class="filters__label">
+                <input class="filters__switch" type="radio" name="filterType" value="isContract"><span class="filters__switcher"><span class="filters__switch-dot"></span></span><span class="filters__text">Контрактные</span>
+              </label>
+            </li>
+            <li class="filters__item">
+              <label class="filters__label">
+                <input class="filters__switch" type="radio" name="filterType" value="isExclusive"><span class="filters__switcher"><span class="filters__switch-dot"></span></span><span class="filters__text">Эксклюзивные</span>
+              </label>
+            </li>
+            <li class="filters__item">
+              <label class="filters__label">
+                <input class="filters__switch" type="radio" name="filterType" value="isSale"><span class="filters__switcher"><span class="filters__switch-dot"></span></span><span class="filters__text">Распродажа </span>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="catalog-layout__main">
+        <div class="catalog-mobile__controls">
+          <button class="filters-mobile__open" type="button">Фильтры</button>
+          <div class="sort">
+            <div class="sort__dropdown">
+              <button class="sort__toggle" type="button"><span class="sort__toggle-text">Сначала дорогие</span><span class="sort__toggle-icon">
+                  <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 7.5L8.4641 3L1.5359 3L5 7.5Z" fill="#202020"></path>
+                  </svg></span></button>
+              <ul class="sort__list">
+                <li class="sort__item sort__item--active">Сначала дорогие</li>
+                <li class="sort__item">Сначала недорогие</li>
+                <li class="sort__item">Сначала популярные</li>
+                <li class="sort__item">Сначала новые</li>
+              </ul>
+            </div>
+            <div class="sort__overlay"> </div>
+          </div>
+        </div>
+        <div class="catalog-list"></div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__container">
+        <p class="footer__copyright"> </p>
+      </div>
+    </footer>
+  </body>
+</html>
