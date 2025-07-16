@@ -1,27 +1,32 @@
-.filters   
+.filters
   ul.filters__list
     li.filters__item
       label.filters__label
-        input.filters__checkbox(type="checkbox" name="isNew")
-        span.filters__custom
+        input.filters__switch(type="radio" name="filterType" value="isNew" checked)
+        span.filters__switcher
+          span.filters__switch-dot
         span.filters__text Новинки
     li.filters__item
       label.filters__label
-        input.filters__checkbox(type="checkbox" name="isAvailable")
-        span.filters__custom
+        input.filters__switch(type="radio" name="filterType" value="isAvailable")
+        span.filters__switcher
+          span.filters__switch-dot
         span.filters__text Есть в наличии
     li.filters__item
       label.filters__label
-        input.filters__checkbox(type="checkbox" name="isContract")
-        span.filters__custom
+        input.filters__switch(type="radio" name="filterType" value="isContract")
+        span.filters__switcher
+          span.filters__switch-dot
         span.filters__text Контрактные
     li.filters__item
       label.filters__label
-        input.filters__checkbox(type="checkbox" name="isExclusive")
-        span.filters__custom
+        input.filters__switch(type="radio" name="filterType" value="isExclusive")
+        span.filters__switcher
+          span.filters__switch-dot
         span.filters__text Эксклюзивные
     li.filters__item
       label.filters__label
-        input.filters__checkbox(type="checkbox" name="isSale")
-        span.filters__custom
+        input.filters__switch(type="radio" name="filterType" value="isSale")
+        span.filters__switcher
+          span.filters__switch-dot
         span.filters__text Распродажа 

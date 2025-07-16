@@ -1,12 +1,13 @@
 .catalog-layout {
   display: flex;
   align-items: flex-start;
-  margin: 32px 0;
+  margin: 64px 0;
 }
 .catalog-layout__sidebar {
   flex: 0 0 240px;
 }
 .catalog-layout__main {
+  padding: 0 67px;
   flex: 1 1 auto;
   min-width: 0;
 }
@@ -14,6 +15,7 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 32px 24px;
+  padding-top: 32px;
 }
 @media (max-width: 1200px) {
   .catalog-list {
