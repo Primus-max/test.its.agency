@@ -38,7 +38,12 @@
   }
 }
 @media (max-width: 600px) {
+  .catalog-layout__main {
+    width: 100%;
+    padding: 0;
+  }
   .catalog-list {
+    padding-top: 0;
     grid-template-columns: 1fr;
     gap: 20px 0;
   }
