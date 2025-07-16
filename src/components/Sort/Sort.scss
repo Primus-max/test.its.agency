@@ -15,7 +15,7 @@
   background: $color-white;
   border-radius: 0;
   box-shadow: $shadow-main;
-  min-width: 220px;
+  min-width: 250px;
   position: absolute;
   top: 0;
   right: 0;
@@ -45,7 +45,7 @@
   background: $color-white;
   border: none;
   border-radius: 0;
-  padding: 10px 32px 10px 16px;
+  padding: 10px 32px;
   font-size: $font-size-base;
   font-family: $font-main;
   font-weight: $font-weight-medium;
@@ -67,4 +67,17 @@
   display: flex;
   align-items: center;
   margin-left: 8px;
+}
+.sort__overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $color-overlay;
+  z-index: 100;
+}
+.sort__dropdown.open ~ .sort__overlay {
+  display: block;
 } 
