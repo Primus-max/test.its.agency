@@ -1,0 +1,83 @@
+.sort {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 24px;
+  position: relative;
+}
+.sort__dropdown {
+  position: relative;
+  z-index: 200;
+}
+.sort__list {
+  margin: 0;
+  padding: 8px 0;
+  background: $color-white;
+  border-radius: 0;
+  box-shadow: $shadow-main;
+  min-width: 250px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  list-style: none;
+  font-size: $font-size-base;
+  font-family: $font-main;
+  display: none;
+}
+.sort__dropdown.open .sort__list {
+  display: block;
+}
+.sort__item {
+  padding: 12px 24px 12px 24px;
+  cursor: pointer;
+  position: relative;
+  color: $color-main;
+  transition: background $transition-main, color $transition-main;
+  display: flex;
+  align-items: center;
+}
+.sort__item--active {
+  background: #A5D6C9;
+  color: $color-main;
+  font-weight: $font-weight-bold;
+}
+.sort__toggle {
+  background: $color-white;
+  border: none;
+  border-radius: 0;
+  padding: 10px 32px;
+  font-size: $font-size-base;
+  font-family: $font-main;
+  font-weight: $font-weight-medium;
+  color: $color-main;
+  // box-shadow: $shadow-main;
+  cursor: pointer;
+  position: relative;
+  min-width: 180px;
+  text-align: left;
+  transition: box-shadow $transition-main;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.sort__toggle-text {
+  flex: 1 1 auto;
+}
+.sort__toggle-icon {
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+}
+.sort__overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $color-overlay;
+  z-index: 100;
+}
+.sort__dropdown.open ~ .sort__overlay {
+  display: block;
+} 
