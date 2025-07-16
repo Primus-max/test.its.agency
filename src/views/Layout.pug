@@ -6,8 +6,8 @@ html(lang="ru")
     title Каталог товаров
     link(rel="stylesheet" href="../style.scss")
   body
+    include ../components/Cart/Cart.pug
     include ../components/Header/Header.pug
     block content
     include ../components/Footer/Footer.pug
-    include ../components/Cart/Cart.pug
     script(type="module" src="../main.js") 
