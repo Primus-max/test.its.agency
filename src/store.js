@@ -1,12 +1,8 @@
 // Простой store для состояния приложения
 const store = {
   state: {
-    products: [],
-    filters: {},
-    sort: 'expensive',
-    loading: false,
-    error: null,
-    cart: [], // [{id, title, price, image, count}]
+    products: [], // <--- добавлено для каталога
+    cart: [],
   },
   listeners: [],
   setState(newState) {
