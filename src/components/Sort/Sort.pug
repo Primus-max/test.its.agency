@@ -1,6 +1,10 @@
 .sort
   .sort__dropdown
-    button.sort__toggle(type="button") Сначала дорогие
+    button.sort__toggle(type="button")
+      span.sort__toggle-text Сначала дорогие
+      span.sort__toggle-icon
+        svg(width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg")
+          path(d="M5 7.5L8.4641 3L1.5359 3L5 7.5Z" fill="#202020")
     ul.sort__list
       li.sort__item.sort__item--active Сначала дорогие
       li.sort__item Сначала недорогие
